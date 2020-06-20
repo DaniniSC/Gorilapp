@@ -15,32 +15,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void IrDescripcion(View view) {
-        Intent obj_intent = new Intent(this, MainActivity2.class);
-        startActivity(obj_intent);
+        startActivity(new Intent(this, MainActivity2.class));
     }
 
     public void IrPreview(View view) {
-        Intent obj_intent = new Intent(this, MainActivity3.class);
-        startActivity(obj_intent);
+        startActivity(new Intent(this, MainActivity3.class));
+//        Intent obj_intent = new Intent(this, MainActivity3.class);
+//        startActivity(obj_intent);
     }
 
     public void IrDiagrama(View view) {
-        Intent obj_intent = new Intent(this, MainActivity4.class);
-        startActivity(obj_intent);
+        startActivity(new Intent(this, MainActivity4.class));
     }
 
     public void IrCalculo(View view) {
-        Intent obj_intent = new Intent(this, MainActivity5.class);
-        startActivity(obj_intent);
+        startActivity(new Intent(this, MainActivity5.class));
     }
 
     public void IrProblematica(View view) {
-        Intent obj_intent = new Intent(this, MainActivity6.class);
-        startActivity(obj_intent);
+        startActivity(new Intent(this, MainActivity6.class));
     }
 
     public void IrIMC(View view) {
-        Intent obj_intent = new Intent(this, MainActivity7.class);
-        startActivity(obj_intent);
+        startActivity(new Intent(this, MainActivity7.class));
     }
 }
