@@ -27,6 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Descripción del proyecto"
+        android:onClick="IrDescripcion"
         tools:layout_editor_absoluteX="97dp"
         tools:layout_editor_absoluteY="251dp" />
 
@@ -35,6 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Vista previa"
+        android:onClick="IrPreview"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="310dp" />
 
@@ -43,6 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Diagrama de clases"
+        android:onClick="IrDiagrama"
         tools:layout_editor_absoluteX="120dp"
         tools:layout_editor_absoluteY="371dp" />
 
@@ -51,6 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ACTIVITY 5"
+        android:onClick="IrCalculo"
         tools:layout_editor_absoluteX="157dp"
         tools:layout_editor_absoluteY="431dp" />
 
@@ -59,6 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Problemática abordada"
+        android:onClick="IrProblematica"
         tools:layout_editor_absoluteX="102dp"
         tools:layout_editor_absoluteY="490dp" />
 
@@ -67,6 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cálculo IMC"
+        android:onClick="IrIMC"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="652dp" />
 
