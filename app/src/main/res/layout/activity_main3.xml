@@ -14,7 +14,7 @@
         app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:srcCompat="@drawable/Activity3" />
+        app:srcCompat="@drawable/activity3" />
 
     <TextView
         android:id="@+id/textView5"

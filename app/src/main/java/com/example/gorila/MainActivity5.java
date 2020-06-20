@@ -3,7 +3,7 @@ package com.example.gorila;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-// Cálculo rela ionado
+// Cálculo relacionado
 public class MainActivity5 extends AppCompatActivity {
 
     @Override
