@@ -29,4 +29,12 @@
         android:text="Cuando la gente piensa en vivir experiencias, se imaginan paquetes turísticos con actividades incluídas o disponibles para tomar a través de la agencia de viajes, sin darse cuenta que en su propia comunidad existen actividades que los turistas vienen a realizar todo el tiempo, pero se pierden porque ¿Quién revisa su propia ciudad cuando ingresa a esos sitios? Actualmente existen plataformas de economía compartida como Uber y AirBnB que permiten a sus usuarios ocupar y prestar sus vehículos y espacios para generar ingresos y aprovechar servicios interactuando directamente con los proveedores."
         tools:layout_editor_absoluteX="40dp"
         tools:layout_editor_absoluteY="358dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="649dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
