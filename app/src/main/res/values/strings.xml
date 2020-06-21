@@ -8,4 +8,6 @@
     <string name="peso_en_kgs">Peso (en kgs)</string>
     <string name="c_lculo_imc">Cálculo IMC</string>
     <string name="sexo">Sexo:</string>
+    <string name="volver_al_men_principal">Volver al menú principal</string>
+    <string name="diagrama_de_clases">Diagrama de clases</string>
 </resources>
