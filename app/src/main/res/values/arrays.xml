@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opciones">
+        <item>Nadar con tiburones</item>
+        <item>Navegar el Mapocho</item>
+        <item>Skydiving desde Costanera Center</item>
+        <item>Completos mojados en Talca</item>
+    </string-array>
+</resources>
