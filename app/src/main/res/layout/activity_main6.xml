@@ -86,4 +86,4 @@
         android:textColor="#FCFFFFFF"
         tools:layout_editor_absoluteX="175dp"
         tools:layout_editor_absoluteY="649dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
