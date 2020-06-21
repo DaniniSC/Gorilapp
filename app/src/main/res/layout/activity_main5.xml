@@ -45,17 +45,6 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#7D6D61"
-        android:onClick="IrMenu"
-        android:text="Volver al menú principal"
-        android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="623dp" />
-
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
@@ -123,5 +112,21 @@
         android:layout_width="211dp"
         android:layout_height="wrap_content"
         android:text="Nuevo Precio + IVA: " />
+    <!-- Espacio -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_weight="0"></LinearLayout>
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#7D6D61"
+        android:onClick="IrMenu"
+        android:text="Volver al menú principal"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="623dp" />
 
 </LinearLayout>
