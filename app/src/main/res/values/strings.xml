@@ -5,4 +5,7 @@
     <string name="volver_al_men_principal">Volver al menú principal</string>
     <string name="experiencias_en_tu_comunidad">Experiencias en tu comunidad</string>
     <string name="gorila">Gorila</string>
+    <string name="peso_en_kgs">Peso (en kgs)</string>
+    <string name="c_lculo_imc">Cálculo IMC</string>
+    <string name="sexo">Sexo:</string>
 </resources>

@@ -6,37 +6,149 @@
     android:layout_height="match_parent"
     android:baselineAligned="false"
     android:orientation="vertical"
-    tools:context=".MainActivity7">
+    tools:context=".MainActivity7"
+    android:background="#BCD979">
 
+    <!-- Titulo -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0">
+        android:layout_weight="0"
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView3"
+
+            android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/textview"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/c_lculo_imc"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#5E574D"
+            android:textSize="24sp"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="107dp"
             tools:layout_editor_absoluteY="56dp"
             tools:text="Cálculo IMC" />
     </LinearLayout>
 
+    <!-- Formulario -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:baselineAligned="false">
+        android:orientation="vertical">
+        <!-- Altura -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Altura (en cms):" />
+
+            <EditText
+                android:id="@+id/altura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <!-- Peso -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Peso (en kgs):" />
+
+            <EditText
+                android:id="@+id/peso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <!-- Sexo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sexo" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <RadioButton
+                    android:id="@+id/sexof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino" />
+
+                <RadioButton
+                    android:id="@+id/sexom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#5E574D"
+                android:fontFamily="sans-serif"
+                android:onClick="IrMenu"
+                android:text="Calcular IMC"
+                android:textColor="#FFFFFF"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="646dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Btn: Volver al menú -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/button12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#7D6D61"
+            android:fontFamily="sans-serif"
             android:onClick="IrMenu"
             android:text="@string/volver_al_men_principal"
+            android:textColor="#FFFFFF"
             tools:layout_editor_absoluteX="169dp"
             tools:layout_editor_absoluteY="646dp" />
     </LinearLayout>
