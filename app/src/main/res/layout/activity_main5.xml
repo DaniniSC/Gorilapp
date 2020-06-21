@@ -9,12 +9,50 @@
     tools:context=".MainActivity5"
     android:background="#BCD979">
 
+    <!-- Titulo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/gorila"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#5E574D"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="56dp"
+            tools:text="Gorila" />
+        <!-- Subtitulo -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="309dp"
+            android:layout_height="37dp"
+            android:fontFamily="casual"
+            android:text="@string/experiencias_en_tu_comunidad"
+            android:textAlignment="textEnd"
+            android:textStyle="italic"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="157dp" />
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/button10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Volver al menú principal"
+        android:backgroundTint="#7D6D61"
         android:onClick="IrMenu"
+        android:text="Volver al menú principal"
+        android:textColor="#FFFFFF"
         tools:layout_editor_absoluteX="172dp"
         tools:layout_editor_absoluteY="623dp" />
 
@@ -73,8 +111,10 @@
         android:id="@+id/btn_dcto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#5E574D"
         android:onClick="generar"
         android:text="Generar"
+        android:textColor="#FFFFFF"
         tools:layout_editor_absoluteX="155dp"
         tools:layout_editor_absoluteY="382dp" />
 
