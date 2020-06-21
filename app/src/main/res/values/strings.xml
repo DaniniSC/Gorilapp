@@ -3,4 +3,6 @@
     <string name="descripci_n_breve_del_proyecto">Descripción breve del proyecto</string>
     <string name="textview">TextView</string>
     <string name="volver_al_men_principal">Volver al menú principal</string>
+    <string name="experiencias_en_tu_comunidad">Experiencias en tu comunidad</string>
+    <string name="gorila">Gorila</string>
 </resources>
