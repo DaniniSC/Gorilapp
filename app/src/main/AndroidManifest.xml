@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.gorila.MainActivity2" >
+        </activity>
+        <activity android:name="com.example.gorila.MainActivity3" >
+        </activity>
+        <activity android:name="com.example.gorila.MainActivity4" >
+        </activity>
+        <activity android:name="com.example.gorila.MainActivity5" >
+        </activity>
+        <activity android:name="com.example.gorila.MainActivity6" >
+        </activity>
+        <activity android:name="com.example.gorila.MainActivity7" >
+        </activity>
     </application>
 
 </manifest>
