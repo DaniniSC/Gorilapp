@@ -6,22 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity5">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Descripción breve del proyecto"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="56dp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="173dp"
-        tools:layout_editor_absoluteY="144dp" />
-
     <Button
         android:id="@+id/button10"
         android:layout_width="wrap_content"
@@ -30,5 +14,64 @@
         android:onClick="IrMenu"
         tools:layout_editor_absoluteX="172dp"
         tools:layout_editor_absoluteY="623dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcula Precio y Genera Descuento"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="361dp"
+        android:layout_height="25dp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona tu Producto"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Crea tu codigo"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="% Descuento"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="282dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="201dp"
+        android:layout_height="21dp"
+        android:text="Precio + IVA: "
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="153dp" />
+
+    <Button
+        android:id="@+id/btn_dcto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generar"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="382dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
