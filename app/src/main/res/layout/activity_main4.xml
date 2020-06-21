@@ -1,10 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity4">
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context=".MainActivity4"
+    android:background="#BCD979">
+
+    <!-- Titulo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/gorila"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#5E574D"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="56dp"
+            tools:text="Gorila" />
+        <!-- Subtitulo -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="309dp"
+            android:layout_height="37dp"
+            android:fontFamily="casual"
+            android:text="@string/experiencias_en_tu_comunidad"
+            android:textAlignment="textEnd"
+            android:textStyle="italic"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="157dp" />
+
+    </LinearLayout>
+
 
     <ImageView
         android:id="@+id/imageView2"
@@ -16,19 +56,24 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="161dp"
+        android:layout_height="49dp"
+        android:fontFamily="sans-serif"
         android:text="Diagrama de clases"
-        tools:layout_editor_absoluteX="143dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="142dp"
         tools:layout_editor_absoluteY="65dp" />
 
     <Button
         android:id="@+id/button9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#7D6D61"
+        android:fontFamily="sans-serif"
         android:text="Volver al menú principal"
+        android:textColor="#FFFFFF"
         android:onClick="IrMenu"
         tools:layout_editor_absoluteX="160dp"
         tools:layout_editor_absoluteY="643dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
