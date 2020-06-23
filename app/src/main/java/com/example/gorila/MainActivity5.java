@@ -20,22 +20,25 @@ import java.util.List;
 public class MainActivity5 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     Spinner opciones;
+    double price = 0;
+    TextView tv16;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main5);
 
-        Button generar = (Button)findViewById(R.id.btn_dcto);
+        // Button generar = (Button)findViewById(R.id.btn_dcto);
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        opciones = (Spinner) findViewById(R.id.spinner);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.opciones, android.R.layout.simple_spinner_item);        // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
-        spinner.setAdapter(adapter);
-
+        opciones.setAdapter(adapter);
+        opciones.setOnItemSelectedListener(this);
+        tv16 = findViewById(R.id.textView16);
 
     }
     public void IrMenu(View view) {
@@ -47,24 +50,25 @@ public class MainActivity5 extends AppCompatActivity implements AdapterView.OnIt
         TextView tv8 = (TextView)findViewById(R.id.textView8);
         EditText codigo = findViewById(R.id.editText);
         EditText dcto = findViewById(R.id.editText2);
+        double monto_dcto = Double.parseDouble(dcto.getText().toString());
+        String precio_final = String.format("%.2f", price*(1-monto_dcto/100));
 
-        Toast toast = Toast.makeText(this, "Código " + codigo.getText().toString() + "generado con " + dcto.getText().toString() + "% de descuento", Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(this, "Código " + codigo.getText().toString() + " generado con " + dcto.getText().toString() + "% de descuento", Toast.LENGTH_LONG);
         toast.show();
+
+        tv8.setText("Nuevo Precio + IVA: " + precio_final);
     }
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         String text = adapterView.getItemAtPosition(i).toString();
 
-        double price = 0;
         if(i == 0){price = 50000;}
         else if(i==1){price = 10000;}
         else if(i==2){price = 100000;}
         else if(i==3){price=1000;}
 
-        String price_str = Double.toString(price);
-        TextView tv16 = (TextView)findViewById(R.id.textView16);
-        tv16.setText("Precio + IVA: " + price_str);
+        tv16.setText("Precio + IVA: " + price);
     }
 
     @Override

@@ -34,11 +34,11 @@
         <!-- Subtitulo -->
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="309dp"
+            android:layout_width="match_parent"
             android:layout_height="37dp"
             android:fontFamily="casual"
             android:text="@string/experiencias_en_tu_comunidad"
-            android:textAlignment="textEnd"
+            android:textAlignment="center"
             android:textStyle="italic"
             tools:layout_editor_absoluteX="110dp"
             tools:layout_editor_absoluteY="157dp" />
@@ -52,26 +52,33 @@
         android:layout_weight="0"></LinearLayout>
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Problemática abordada"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="68dp" />
+        android:layout_weight="0"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Problemática Abordada"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#422802"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="56dp"
+        tools:text="Problemática Abordada" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
+        android:layout_width="84dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
         tools:layout_editor_absoluteX="177dp"
         tools:layout_editor_absoluteY="283dp" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="330dp"
+        android:layout_width="match_parent"
         android:layout_height="251dp"
         android:text="Cuando la gente piensa en vivir experiencias, se imaginan paquetes turísticos con actividades incluídas o disponibles para tomar a través de la agencia de viajes, sin darse cuenta que en su propia comunidad existen actividades que los turistas vienen a realizar todo el tiempo, pero se pierden porque ¿Quién revisa su propia ciudad cuando ingresa a esos sitios? Actualmente existen plataformas de economía compartida como Uber y AirBnB que permiten a sus usuarios ocupar y prestar sus vehículos y espacios para generar ingresos y aprovechar servicios interactuando directamente con los proveedores."
+        android:textSize="16sp"
         tools:layout_editor_absoluteX="40dp"
         tools:layout_editor_absoluteY="358dp" />
 

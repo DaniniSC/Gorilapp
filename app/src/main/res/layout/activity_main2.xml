@@ -34,11 +34,11 @@
         <!-- Subtitulo -->
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="309dp"
+            android:layout_width="match_parent"
             android:layout_height="37dp"
             android:fontFamily="casual"
             android:text="@string/experiencias_en_tu_comunidad"
-            android:textAlignment="textEnd"
+            android:textAlignment="center"
             android:textStyle="italic"
             tools:layout_editor_absoluteX="110dp"
             tools:layout_editor_absoluteY="157dp" />
@@ -48,7 +48,7 @@
     <!-- Espacio -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="33dp"
+        android:layout_height="19dp"
         android:layout_weight="0"></LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -92,6 +92,7 @@
             android:text="En nuestro proyecto interactúan directamente 2 participantes: clientes y proveedores."
             android:textAlignment="viewStart"
             android:textColor="#5E574D"
+            android:textSize="16sp"
             tools:layout_editor_absoluteX="173dp"
             tools:layout_editor_absoluteY="144dp"
             tools:text="En nuestro proyecto interactúan directamente 2 participantes: clientes y proveedores." />
@@ -111,12 +112,13 @@
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="326dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Los proveedores también deben ingresar con sus credenciales únicas para usar el sitio, pueden publicar la experiencia que ofrecen llenando un formulario con datos requeridos, pueden ver el listado de experiencias que han ofrecido y eliminar una experiencia desde ese listado."
             android:textAlignment="viewStart"
             android:textColor="#5E574D"
+            android:textSize="16sp"
             tools:layout_editor_absoluteX="173dp"
             tools:layout_editor_absoluteY="144dp"
             tools:text="Los proveedores también deben ingresar con sus credenciales únicas para usar el sitio, pueden publicar la experiencia que ofrecen llenando un formulario con datos requeridos, pueden ver el listado de experiencias que han ofrecido y eliminar una experiencia desde ese listado." />
@@ -142,6 +144,7 @@
             android:text='Los clientes deben loguearse para ingresar a su portal, podrán ver una lista de experiencias disponible en todo Chile, con una opción de filtrar para ver sólo las que están en su región. Pueden reservar un cupo de esas actividades disponibles y también cancelar la reserva. Además, tendrán la posibilidad de ver el listado de experiencias que han tomado y su estado actual."'
             android:textAlignment="viewStart"
             android:textColor="#5E574D"
+            android:textSize="16sp"
             tools:layout_editor_absoluteX="173dp"
             tools:layout_editor_absoluteY="144dp"
             tools:text="Los clientes deben loguearse para ingresar a su portal, podrán ver una lista de experiencias disponible en todo Chile, con una opción de filtrar para ver sólo las que están en su región. Pueden reservar un cupo de esas actividades disponibles y también cancelar la reserva. Además, tendrán la posibilidad de ver el listado de experiencias que han tomado y su estado actual." />
@@ -150,18 +153,18 @@
     <!-- Espacio -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="54dp"
+        android:layout_height="26dp"
         android:layout_weight="0"></LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:baselineAligned="false">
 
         <Button
             android:id="@+id/button12"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#7D6D61"
             android:onClick="IrMenu"

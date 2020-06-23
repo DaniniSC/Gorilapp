@@ -34,21 +34,24 @@
         <!-- Subtitulo -->
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="309dp"
+            android:layout_width="match_parent"
             android:layout_height="37dp"
             android:fontFamily="casual"
             android:text="@string/experiencias_en_tu_comunidad"
-            android:textAlignment="textEnd"
+            android:textAlignment="center"
             android:textStyle="italic"
             tools:layout_editor_absoluteX="110dp"
             tools:layout_editor_absoluteY="157dp" />
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="161dp"
+            android:layout_width="match_parent"
             android:layout_height="49dp"
-            android:fontFamily="sans-serif"
+            android:fontFamily="sans-serif-condensed-medium"
             android:text="Diagrama de clases"
+            android:textAlignment="center"
+            android:textColor="#422802"
+            android:textSize="24sp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="142dp"
             tools:layout_editor_absoluteY="65dp" />
@@ -58,8 +61,9 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="343dp"
-        android:layout_height="378dp"
+        android:layout_width="wrap_content"
+        android:layout_height="413dp"
+        android:layout_gravity="center"
         app:srcCompat="@drawable/activity4"
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="137dp" />
