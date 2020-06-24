@@ -7,7 +7,8 @@
     android:baselineAligned="false"
     android:orientation="vertical"
     tools:context=".MainActivity4"
-    android:background="#BCD979">
+    android:background="#BCD979"
+    android:padding="20dp">
 
     <!-- Titulo -->
     <LinearLayout
@@ -68,16 +69,23 @@
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="137dp" />
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="wrap_content"
+    <!-- Btn: Volver al menú -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#7D6D61"
-        android:fontFamily="sans-serif"
-        android:text="Volver al menú principal"
-        android:textColor="#FFFFFF"
-        android:onClick="IrMenu"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="643dp" />
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:backgroundTint="#7D6D61"
+            android:fontFamily="sans-serif"
+            android:onClick="IrMenu"
+            android:text="@string/volver_al_men_principal"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp" />
+    </LinearLayout>
 
 </LinearLayout>
