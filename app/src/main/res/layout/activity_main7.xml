@@ -140,9 +140,10 @@
         <TextView
             android:id="@+id/imc"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="wrap_content"
             android:text=""
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textAlignment="center" />
     </LinearLayout>
 
     <!-- Btn: Volver al menú -->

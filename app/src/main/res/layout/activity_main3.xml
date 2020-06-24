@@ -46,56 +46,30 @@
 
     </LinearLayout>
 
-    <!-- Espacio -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="13dp"
-        android:layout_weight="0"></LinearLayout>
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:baselineAligned="false">
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="421dp"
-            android:layout_height="37dp"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:text="Pantalla representativa de la aplicación"
-            android:textAlignment="center"
-            android:textColor="#422802"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="110dp"
-            tools:layout_editor_absoluteY="157dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="16dp"
-        android:layout_weight="0"></LinearLayout>
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Pantalla representativa de la aplicación"
+        android:textAlignment="center"
+        android:textColor="#422802"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:padding="15dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="336dp"
         android:layout_weight="0"
         android:baselineAligned="false">
-
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="347dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="0dp"
             app:srcCompat="@drawable/activity3" />
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="106dp"
-        android:layout_weight="0"></LinearLayout>
 
     <!-- Btn: Volver al menú -->
     <LinearLayout
