@@ -11,152 +11,167 @@
     android:padding="20dp">
 
     <!-- Titulo -->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:orientation="vertical">
-
-        <TextView
-
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:text="@string/gorila"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#5E574D"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="107dp"
-            tools:layout_editor_absoluteY="56dp"
-            tools:text="Gorila" />
-        <!-- Subtitulo -->
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="37dp"
-            android:fontFamily="casual"
-            android:text="@string/experiencias_en_tu_comunidad"
-            android:textAlignment="center"
-            android:textStyle="italic"
-            tools:layout_editor_absoluteX="110dp"
-            tools:layout_editor_absoluteY="157dp" />
-
-    </LinearLayout>
-
-    <!-- Espacio -->
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="Calcula Precio y Genera Descuento"
-        android:textAlignment="center"
-        android:textColor="#422802"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Selecciona tu Producto"
-            android:textSize="19sp"
-            tools:layout_editor_absoluteX="132dp"
-            tools:layout_editor_absoluteY="68dp" />
-
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:scrollbarSize="21sp"
-            tools:layout_editor_absoluteX="26dp"
-            tools:layout_editor_absoluteY="97dp" />
-
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:text="Precio + IVA: "
-            android:textSize="20sp"
-            tools:layout_editor_absoluteX="95dp"
-            tools:layout_editor_absoluteY="153dp" />
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Crea tu codigo"
-            android:inputType="text"
-            android:textAlignment="center"
-            tools:layout_editor_absoluteX="95dp"
-            tools:layout_editor_absoluteY="211dp" />
-
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="% Descuento"
-            android:inputType="number"
-            android:textAlignment="center"
-            tools:layout_editor_absoluteX="95dp"
-            tools:layout_editor_absoluteY="282dp" />
-
-        <Button
-            android:id="@+id/btn_dcto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#5E574D"
-            android:onClick="generar"
-            android:text="Generar"
-            android:textColor="#FFFFFF"
-            tools:layout_editor_absoluteX="155dp"
-            tools:layout_editor_absoluteY="382dp" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:text="Nuevo Precio + IVA: "
-            android:textSize="20sp" />
+        android:layout_height="match_parent"
+        android:layout_weight="0">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="74dp"
-            android:layout_weight="0">
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="@string/gorila"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#5E574D"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="107dp"
+                    tools:layout_editor_absoluteY="56dp"
+                    tools:text="Gorila" />
+                <!-- Subtitulo -->
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:fontFamily="casual"
+                    android:text="@string/experiencias_en_tu_comunidad"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="157dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Calcula Precio y Genera Descuento"
+                android:textAlignment="center"
+                android:textColor="#422802"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="95dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_dcto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#5E574D"
+                    android:onClick="generar"
+                    android:text="Generar"
+                    android:textColor="#FFFFFF"
+                    tools:layout_editor_absoluteX="155dp"
+                    tools:layout_editor_absoluteY="382dp" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="% Descuento"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    tools:layout_editor_absoluteX="95dp"
+                    tools:layout_editor_absoluteY="282dp" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Crea tu codigo"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    tools:layout_editor_absoluteX="95dp"
+                    tools:layout_editor_absoluteY="211dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:layout_weight="0">
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:scrollbarSize="21sp"
+                    tools:layout_editor_absoluteX="26dp"
+                    tools:layout_editor_absoluteY="97dp" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selecciona tu Producto"
+                    android:textSize="19sp"
+                    tools:layout_editor_absoluteX="132dp"
+                    tools:layout_editor_absoluteY="68dp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Nuevo Precio + IVA: "
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="Precio + IVA: "
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="95dp"
+                    tools:layout_editor_absoluteY="153dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_weight="0"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:backgroundTint="#7D6D61"
+                    android:fontFamily="sans-serif"
+                    android:onClick="IrMenu"
+                    android:text="@string/volver_al_men_principal"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12dp" />
+            </LinearLayout>
         </LinearLayout>
+    </ScrollView>
 
-    </LinearLayout>
+    <!-- Espacio -->
+
     <!-- Btn: Volver al menú -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:orientation="vertical"
-        android:layout_margin="30dp">
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:backgroundTint="#7D6D61"
-            android:fontFamily="sans-serif"
-            android:onClick="IrMenu"
-            android:text="@string/volver_al_men_principal"
-            android:textColor="#FFFFFF"
-            android:textSize="12dp" />
-    </LinearLayout>
 
 </LinearLayout>

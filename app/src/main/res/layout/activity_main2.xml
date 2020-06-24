@@ -11,169 +11,188 @@
     android:padding="20dp">
 
     <!-- Titulo -->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:orientation="vertical">
-
-        <TextView
-
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:text="@string/gorila"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#5E574D"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="107dp"
-            tools:layout_editor_absoluteY="56dp"
-            tools:text="Gorila" />
-        <!-- Subtitulo -->
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="37dp"
-            android:fontFamily="casual"
-            android:text="@string/experiencias_en_tu_comunidad"
-            android:textAlignment="center"
-            android:textStyle="italic"
-            tools:layout_editor_absoluteX="110dp"
-            tools:layout_editor_absoluteY="157dp" />
-
-    </LinearLayout>
-
-    <!-- Espacio -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="19dp"
-        android:layout_weight="0"></LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="0">
 
-        <TextView
-            android:id="@+id/textView3"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:text="Descripción breve del proyecto"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#422802"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="107dp"
-            tools:layout_editor_absoluteY="56dp"
-            tools:text="Descripción breve del proyecto" />
-    </LinearLayout>
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="@string/gorila"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#5E574D"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="107dp"
+                    tools:layout_editor_absoluteY="56dp"
+                    tools:text="Gorila" />
+                <!-- Subtitulo -->
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:fontFamily="casual"
+                    android:text="@string/experiencias_en_tu_comunidad"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="157dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_weight="0"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Descripción breve del proyecto"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#422802"
+                    android:textSize="24sp"
+                    tools:layout_editor_absoluteX="107dp"
+                    tools:layout_editor_absoluteY="56dp"
+                    tools:text="Descripción breve del proyecto" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_weight="0"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:baselineAligned="false">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:fontFamily="sans-serif"
+                    android:text="En nuestro proyecto interactúan directamente 2 participantes: clientes y proveedores."
+                    android:textAlignment="viewStart"
+                    android:textColor="#5E574D"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="173dp"
+                    tools:layout_editor_absoluteY="144dp"
+                    tools:text="En nuestro proyecto interactúan directamente 2 participantes: clientes y proveedores." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_weight="0"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:baselineAligned="false">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="326dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Los proveedores también deben ingresar con sus credenciales únicas para usar el sitio, pueden publicar la experiencia que ofrecen llenando un formulario con datos requeridos, pueden ver el listado de experiencias que han ofrecido y eliminar una experiencia desde ese listado."
+                    android:textAlignment="viewStart"
+                    android:textColor="#5E574D"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="173dp"
+                    tools:layout_editor_absoluteY="144dp"
+                    tools:text="Los proveedores también deben ingresar con sus credenciales únicas para usar el sitio, pueden publicar la experiencia que ofrecen llenando un formulario con datos requeridos, pueden ver el listado de experiencias que han ofrecido y eliminar una experiencia desde ese listado." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_weight="0"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:baselineAligned="false">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text='Los clientes deben loguearse para ingresar a su portal, podrán ver una lista de experiencias disponible en todo Chile, con una opción de filtrar para ver sólo las que están en su región. Pueden reservar un cupo de esas actividades disponibles y también cancelar la reserva. Además, tendrán la posibilidad de ver el listado de experiencias que han tomado y su estado actual."'
+                    android:textAlignment="viewStart"
+                    android:textColor="#5E574D"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="173dp"
+                    tools:layout_editor_absoluteY="144dp"
+                    tools:text="Los clientes deben loguearse para ingresar a su portal, podrán ver una lista de experiencias disponible en todo Chile, con una opción de filtrar para ver sólo las que están en su región. Pueden reservar un cupo de esas actividades disponibles y también cancelar la reserva. Además, tendrán la posibilidad de ver el listado de experiencias que han tomado y su estado actual." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_weight="0"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_weight="0"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:backgroundTint="#7D6D61"
+                    android:fontFamily="sans-serif"
+                    android:onClick="IrMenu"
+                    android:text="@string/volver_al_men_principal"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Espacio -->
 
     <!-- Espacio -->
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_weight="0"></LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:baselineAligned="false">
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="53dp"
-            android:fontFamily="sans-serif"
-            android:text="En nuestro proyecto interactúan directamente 2 participantes: clientes y proveedores."
-            android:textAlignment="viewStart"
-            android:textColor="#5E574D"
-            android:textSize="16sp"
-            tools:layout_editor_absoluteX="173dp"
-            tools:layout_editor_absoluteY="144dp"
-            tools:text="En nuestro proyecto interactúan directamente 2 participantes: clientes y proveedores." />
-    </LinearLayout>
+    <!-- Espacio -->
 
     <!-- Espacio -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="31dp"
-        android:layout_weight="0"></LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:baselineAligned="false">
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="326dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Los proveedores también deben ingresar con sus credenciales únicas para usar el sitio, pueden publicar la experiencia que ofrecen llenando un formulario con datos requeridos, pueden ver el listado de experiencias que han ofrecido y eliminar una experiencia desde ese listado."
-            android:textAlignment="viewStart"
-            android:textColor="#5E574D"
-            android:textSize="16sp"
-            tools:layout_editor_absoluteX="173dp"
-            tools:layout_editor_absoluteY="144dp"
-            tools:text="Los proveedores también deben ingresar con sus credenciales únicas para usar el sitio, pueden publicar la experiencia que ofrecen llenando un formulario con datos requeridos, pueden ver el listado de experiencias que han ofrecido y eliminar una experiencia desde ese listado." />
-    </LinearLayout>
 
     <!-- Espacio -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="28dp"
-        android:layout_weight="0"></LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:baselineAligned="false">
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text='Los clientes deben loguearse para ingresar a su portal, podrán ver una lista de experiencias disponible en todo Chile, con una opción de filtrar para ver sólo las que están en su región. Pueden reservar un cupo de esas actividades disponibles y también cancelar la reserva. Además, tendrán la posibilidad de ver el listado de experiencias que han tomado y su estado actual."'
-            android:textAlignment="viewStart"
-            android:textColor="#5E574D"
-            android:textSize="16sp"
-            tools:layout_editor_absoluteX="173dp"
-            tools:layout_editor_absoluteY="144dp"
-            tools:text="Los clientes deben loguearse para ingresar a su portal, podrán ver una lista de experiencias disponible en todo Chile, con una opción de filtrar para ver sólo las que están en su región. Pueden reservar un cupo de esas actividades disponibles y también cancelar la reserva. Además, tendrán la posibilidad de ver el listado de experiencias que han tomado y su estado actual." />
-    </LinearLayout>
-
-    <!-- Espacio -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="26dp"
-        android:layout_weight="0"></LinearLayout>
 
     <!-- Btn: Volver al menú -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:orientation="vertical"
-        android:layout_margin="30dp">
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:backgroundTint="#7D6D61"
-            android:fontFamily="sans-serif"
-            android:onClick="IrMenu"
-            android:text="@string/volver_al_men_principal"
-            android:textColor="#FFFFFF"
-            android:textSize="12dp" />
-    </LinearLayout>
 
 </LinearLayout>
