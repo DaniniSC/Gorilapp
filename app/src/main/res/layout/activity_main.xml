@@ -9,174 +9,194 @@
         tools:context=".MainActivity"
         android:background="#ffffff">
     <!-- Titulo -->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:orientation="vertical"
-        android:background="#BCD979"
-        android:padding="20dp">
+        android:layout_height="match_parent"
+        android:layout_weight="0">
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            app:srcCompat="@drawable/gorilla" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:text="@string/gorila"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#5E574D"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="107dp"
-            tools:layout_editor_absoluteY="56dp"
-            tools:text="Gorila" />
-        <!-- Subtitulo -->
-        <TextView
-            android:id="@+id/textView2"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="casual"
-            android:text="@string/experiencias_en_tu_comunidad"
-            android:textAlignment="center"
-            android:textStyle="italic"
-            android:layout_marginTop="10dp" />
+            android:orientation="vertical" >
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="#BCD979"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/gorilla" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="@string/gorila"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#5E574D"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="107dp"
+                    tools:layout_editor_absoluteY="56dp"
+                    tools:text="Gorila" />
+                <!-- Subtitulo -->
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="casual"
+                    android:text="@string/experiencias_en_tu_comunidad"
+                    android:textAlignment="center"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <!-- Boton descripcion -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0"
+                    android:baselineAligned="false">
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#7D6D61"
+                        android:fontFamily="sans-serif"
+                        android:onClick="IrDescripcion"
+                        android:text="A2: Descripción del proyecto"
+                        android:textColor="#FFFFFF"
+                        tools:layout_editor_absoluteX="169dp"
+                        tools:layout_editor_absoluteY="646dp" />
+                </LinearLayout>
+
+                <!-- Boton Vista previa -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0"
+                    android:baselineAligned="false">
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#7D6D61"
+                        android:fontFamily="sans-serif"
+                        android:onClick="IrPreview"
+                        android:text="A3: Vista previa"
+                        android:textColor="#FFFFFF"
+                        tools:layout_editor_absoluteX="169dp"
+                        tools:layout_editor_absoluteY="646dp" />
+                </LinearLayout>
+
+                <!-- Botón diagrama de clases -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0"
+                    android:baselineAligned="false">
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#7D6D61"
+                        android:fontFamily="sans-serif"
+                        android:onClick="IrDiagrama"
+                        android:text="A4: Diagrama de clases"
+                        android:textColor="#FFFFFF"
+                        tools:layout_editor_absoluteX="169dp"
+                        tools:layout_editor_absoluteY="646dp" />
+                </LinearLayout>
+
+                <!-- Botón cálculo relacionado -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0"
+                    android:baselineAligned="false">
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#7D6D61"
+                        android:fontFamily="sans-serif"
+                        android:onClick="IrCalculo"
+                        android:text="A5: GENERA CODIGOS DESCUENTO"
+                        android:textColor="#FFFFFF"
+                        tools:layout_editor_absoluteX="169dp"
+                        tools:layout_editor_absoluteY="646dp" />
+                </LinearLayout>
+
+                <!-- Botón problemática abordada -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0"
+                    android:baselineAligned="false">
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#7D6D61"
+                        android:fontFamily="sans-serif"
+                        android:onClick="IrProblematica"
+                        android:text="A6: Problemática abordada"
+                        android:textColor="#FFFFFF"
+                        tools:layout_editor_absoluteX="169dp"
+                        tools:layout_editor_absoluteY="646dp" />
+                </LinearLayout>
+
+                <!-- Botón IMC -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0"
+                    android:baselineAligned="false">
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#7D6D61"
+                        android:fontFamily="sans-serif"
+                        android:onClick="IrIMC"
+                        android:text="A7: Cálculo IMC"
+                        android:textColor="#FFFFFF"
+                        tools:layout_editor_absoluteX="169dp"
+                        tools:layout_editor_absoluteY="646dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
     <!-- Botones -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:orientation="vertical"
-        android:padding="20dp"
-        android:layout_marginTop="20dp">
-        <!-- Boton descripcion -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:baselineAligned="false"
-            android:layout_margin="5dp">
-            <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#7D6D61"
-                android:fontFamily="sans-serif"
-                android:onClick="IrDescripcion"
-                android:text="A2: Descripción del proyecto"
-                android:textColor="#FFFFFF"
-                tools:layout_editor_absoluteX="169dp"
-                tools:layout_editor_absoluteY="646dp" />
-        </LinearLayout>
-
-        <!-- Boton Vista previa -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:baselineAligned="false"
-            android:layout_margin="5dp">
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#7D6D61"
-                android:fontFamily="sans-serif"
-                android:onClick="IrPreview"
-                android:text="A3: Vista previa"
-                android:textColor="#FFFFFF"
-                tools:layout_editor_absoluteX="169dp"
-                tools:layout_editor_absoluteY="646dp" />
-        </LinearLayout>
-
-        <!-- Botón diagrama de clases -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:baselineAligned="false"
-            android:layout_margin="5dp">
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#7D6D61"
-                android:fontFamily="sans-serif"
-                android:onClick="IrDiagrama"
-                android:text="A4: Diagrama de clases"
-                android:textColor="#FFFFFF"
-                tools:layout_editor_absoluteX="169dp"
-                tools:layout_editor_absoluteY="646dp" />
-        </LinearLayout>
-
-        <!-- Botón cálculo relacionado -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:baselineAligned="false"
-            android:layout_margin="5dp">
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#7D6D61"
-                android:fontFamily="sans-serif"
-                android:onClick="IrCalculo"
-                android:text="A5: GENERA CODIGOS DESCUENTO"
-                android:textColor="#FFFFFF"
-                tools:layout_editor_absoluteX="169dp"
-                tools:layout_editor_absoluteY="646dp" />
-        </LinearLayout>
-
-        <!-- Botón problemática abordada -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:baselineAligned="false"
-            android:layout_margin="5dp">
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:backgroundTint="#7D6D61"
-                android:fontFamily="sans-serif"
-                android:onClick="IrProblematica"
-                android:text="A6: Problemática abordada"
-                android:textColor="#FFFFFF"
-                tools:layout_editor_absoluteX="169dp"
-                tools:layout_editor_absoluteY="646dp" />
-        </LinearLayout>
-
-        <!-- Botón IMC -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:baselineAligned="false"
-            android:layout_margin="5dp">
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#7D6D61"
-                android:fontFamily="sans-serif"
-                android:onClick="IrIMC"
-                android:text="A7: Cálculo IMC"
-                android:textColor="#FFFFFF"
-                tools:layout_editor_absoluteX="169dp"
-                tools:layout_editor_absoluteY="646dp" />
-        </LinearLayout>
-    </LinearLayout>
 
 </LinearLayout>

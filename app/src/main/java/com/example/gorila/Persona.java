@@ -70,7 +70,7 @@ public class Persona {
             nivel_imc = "OBESIDAD";
         }
 
-        return "Tu IMC es: " + String.format("%.2f", calc_imc) + ", por tanto tu nivel indica " + nivel_imc;
+        return "Tu IMC es: " + String.format("%.1f", calc_imc) + ", por tanto tu nivel indica " + nivel_imc;
 
     }
 
