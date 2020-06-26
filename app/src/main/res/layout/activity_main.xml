@@ -30,7 +30,7 @@
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="32dp"
                     app:srcCompat="@drawable/gorilla" />
 
                 <TextView
