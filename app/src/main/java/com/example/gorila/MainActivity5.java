@@ -51,12 +51,12 @@ public class MainActivity5 extends AppCompatActivity implements AdapterView.OnIt
         EditText codigo = findViewById(R.id.editText);
         EditText dcto = findViewById(R.id.editText2);
         double monto_dcto = Double.parseDouble(dcto.getText().toString());
-        String precio_final = String.format("%.2f", price*(1-monto_dcto/100));
+        String precio_final = String.format("%.0f", price*(1-monto_dcto/100));
 
         Toast toast = Toast.makeText(this, "Código " + codigo.getText().toString() + " generado con " + dcto.getText().toString() + "% de descuento", Toast.LENGTH_LONG);
         toast.show();
 
-        tv8.setText("Nuevo Precio + IVA: " + precio_final);
+        tv8.setText("Nuevo Precio + IVA: $" + precio_final);
     }
 
     @Override
@@ -68,7 +68,7 @@ public class MainActivity5 extends AppCompatActivity implements AdapterView.OnIt
         else if(i==2){price = 100000;}
         else if(i==3){price=1000;}
 
-        tv16.setText("Precio + IVA: " + price);
+        tv16.setText("Precio + IVA: $" + price);
     }
 
     @Override
